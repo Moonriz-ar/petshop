@@ -1,2 +1,132 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* BASE */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+}
 
 
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    padding: 0 0 0 2rem;
+}
+
+header #sub-header{
+    align-items: center;
+    background-color: #222222;
+    color: #F3F3F3;
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+}
+
+header nav {
+    align-items: center;
+    background-color: #F0A83E;
+    color: #F3F3F3;
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+}
+
+header nav .logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header nav span {
+    color: #222222;
+}
+
+header nav a {
+    color: #F3F3F3;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    color: #F3F3F3;
+}
+
+footer .main-footer {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+}
+
+footer .main-footer .contactos-item {
+    display: flex;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+}
+
+footer i {
+    padding: 0 3rem 0 0;
+}
+
+footer .main-footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer .main-footer p {
+    color: #8A8787;
+}
+
+footer .sub-footer {
+    background-color: #222222;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer .logo p {
+    color: #F3F3F3;
+}
+
+footer .logo span {
+    color: #F0A83E;
+}

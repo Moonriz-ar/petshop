@@ -12,15 +12,15 @@
 </head>
 <body>
     <header>
-        <section>
+        <section id='sub-header'>
             <p>Grandes ofertas en comederos</p>
             <ul>
-                <li>Español</li><i class="fas fa-angle-down"></i>
-                <li>ARG$</li><i class="fas fa-angle-down"></i>
+                <li>Español   <i class="fas fa-angle-down"></i></li>
+                <li>ARG$   <i class="fas fa-angle-down"></i></li>
             </ul>
         </section>
         <nav>
-            <div>
+            <div class='logo'>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.8065 6.23869C11.2294 6.15457 10.6879 5.91789 10.2423 5.55501C9.7967 5.19213 9.46448 4.7173 9.28266 4.18341C9.10084 3.64951 9.07656 3.07751 9.21251 2.53111C9.34847 1.98471 9.63932 1.48536 10.0527 1.08869C11.2848 -0.0973588 13.6554 -0.455671 14.8875 0.73038C14.9688 0.808614 15.0439 0.892549 15.1123 0.981492L11.8065 6.23869Z" fill="url(#paint0_linear)"/>
                     <path d="M14.5152 5.38398C14.1653 5.7215 13.7377 5.9748 13.267 6.1233C12.7963 6.27181 12.2959 6.31132 11.8064 6.23865C11.6112 5.68424 11.5443 5.09548 11.6104 4.51358C11.6764 3.93168 11.8737 3.3707 12.1886 2.86991C12.5034 2.36912 12.9282 1.94063 13.4331 1.61442C13.938 1.28822 14.5109 1.07218 15.1116 0.981445C16.0686 2.21547 15.6654 4.27723 14.5152 5.38398Z" fill="url(#paint1_linear)"/>
@@ -63,7 +63,7 @@
                     </linearGradient>
                     </defs>
                     </svg>                    
-                <p>Front<span>Cat&Dog</span></p>
+                <p><span>Front</span>Cat&Dog</p>
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.6752 0.407018C14.5666 -0.164715 15.7373 -0.124087 16.6155 0.465757C17.4228 0.995981 18.0184 1.77413 18.3045 2.67241C18.4126 3.0138 18.406 3.37921 18.2857 3.71681C18.1655 4.05442 17.9375 4.34708 17.6343 4.5533C17.3311 4.75951 16.968 4.86881 16.5965 4.86569C16.225 4.86257 15.8639 4.7472 15.5645 4.53593L12.6313 2.46437C12.6313 1.39238 13.1104 0.769246 13.6752 0.408486V0.407018Z" fill="url(#paint0_linear)"/>
                     <path d="M4.70486 0.407018C3.81344 -0.164715 2.64272 -0.124087 1.76558 0.465757C0.958212 0.995981 0.362587 1.77413 0.0765221 2.67241C-0.0315673 3.0138 -0.025001 3.37921 0.0952903 3.71681C0.215582 4.05442 0.443491 4.34708 0.746697 4.5533C1.0499 4.75951 1.41301 4.86881 1.78453 4.86569C2.15605 4.86257 2.51711 4.7472 2.81652 4.53593L5.74969 2.46437C5.74969 1.39238 5.2706 0.769246 4.70588 0.408486L4.70486 0.407018Z" fill="url(#paint1_linear)"/>
@@ -96,8 +96,7 @@
                     <stop offset="1" stop-color="#3C2313"/>
                     </linearGradient>
                     </defs>
-                    </svg>cv
-                    
+                    </svg>  
             </div>
             <section>
                 <ul>
@@ -119,7 +118,6 @@
     </header>
     <main>
         <section id="banner">
-            <i class="fas fa-paw">
             <div>
                 <h2>¡Es un placer tenerte aquí!</h2>
                 <p>¡Comederos en descuento!</p>
@@ -127,7 +125,7 @@
             </div>
         </section>
         <section id="productos">
-            <img src="img/patita.png" alt="">
+            <i class="fas fa-paw"></i>
             <h2>Productos Destacados</h2>
             <section>
                 <ul>
@@ -159,9 +157,33 @@
         </section>
     </main>
     <footer>
-        <section>
-            <div></div>
-            <div>
+        <section class='main-footer'>
+            <div class='contactos'>
+                <ul class='contactos-item'>
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-4x"></i>
+                        <div>
+                            <h3>Localidad</h3>
+                            <p>Calle - provincia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone fa-3x"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>Número de teléfono</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>Dirección de correo</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class='logo'>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.8065 6.23869C11.2294 6.15457 10.6879 5.91789 10.2423 5.55501C9.7967 5.19213 9.46448 4.7173 9.28266 4.18341C9.10084 3.64951 9.07656 3.07751 9.21251 2.53111C9.34847 1.98471 9.63932 1.48536 10.0527 1.08869C11.2848 -0.0973588 13.6554 -0.455671 14.8875 0.73038C14.9688 0.808614 15.0439 0.892549 15.1123 0.981492L11.8065 6.23869Z" fill="url(#paint0_linear)"/>
                     <path d="M14.5152 5.38398C14.1653 5.7215 13.7377 5.9748 13.267 6.1233C12.7963 6.27181 12.2959 6.31132 11.8064 6.23865C11.6112 5.68424 11.5443 5.09548 11.6104 4.51358C11.6764 3.93168 11.8737 3.3707 12.1886 2.86991C12.5034 2.36912 12.9282 1.94063 13.4331 1.61442C13.938 1.28822 14.5109 1.07218 15.1116 0.981445C16.0686 2.21547 15.6654 4.27723 14.5152 5.38398Z" fill="url(#paint1_linear)"/>
@@ -240,7 +262,7 @@
                     </svg>       
             </div>
         </section>
-        <section>
+        <section class='sub-footer'>
             <p>Todos los derechos reservados Front End</p>
         </section>
     </footer>
