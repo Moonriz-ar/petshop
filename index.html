@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <section id='sub-header'>
+        <section class='sub-header'>
             <p>Grandes ofertas en comederos</p>
             <ul>
                 <li>Español   <i class="fas fa-angle-down"></i></li>
@@ -98,7 +98,7 @@
                     </defs>
                     </svg>  
             </div>
-            <section>
+            <section class='nav-links'>
                 <ul>
                     <li>
                         <i class="fas fa-paw"></i><a href="#">Categorías</a>
@@ -114,46 +114,72 @@
                     </li> 
                 </ul>
             </section>
+            <i class="fas fa-bars hamburger"></i>
         </nav>
     </header>
     <main>
-        <section id="banner">
+        <section class="banner">
             <div class="banner-content">
                 <h2>¡Es un placer tenerte aquí!</h2>
                 <p>¡Comederos en descuento!</p>
                 <a href="#">COMEDEROS</a>
             </div>
         </section>
-        <section id="productos">
-            <i class="fas fa-paw"></i>
-            <h2>Productos Destacados</h2>
-            <section>
-                <ul>
-                    <li><a href="#">Comederos</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Comida</a></li>
-                </ul>
-                <section>
-                    <article>
-                        <img src="img/churrasquito.png" alt="">
-                        <p>Juguete Churrasquito</p>
-                        <p>$150</p>
-                    </article>
-                    <article>
-                        <img src="img/comida-para-perro.png" alt="">
-                        <p>Comedero para perro</p>
-                        <p>$250</p>
-                    </article>
-                    <article>
-                        <img src="img/huesito.png" alt="">
-                        <p>Juguete Huesito</p>
-                        <p>$650</p>
-                    </article>
-                </section>
+        <section>
+            <section class="destacados">
+                <img class="paw" src="img/pawprint.svg" alt="paw icon">
+                <h2>Productos Destacados</h2>
+                <div>
+                    <ul>
+                        <li><a href="#">Comederos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Comida</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="cards">
+                <article>
+                    <img src="img/churrasquito.png" alt="">
+                    <p>Juguete Churrasquito</p>
+                    <p>$150</p>
+                </article>
+                <article>
+                    <img src="img/comida-para-perro.png" alt="">
+                    <p>Comedero para perro</p>
+                    <p>$250</p>
+                </article>
+                <article>
+                    <img src="img/huesito.png" alt="">
+                    <p>Juguete Huesito</p>
+                    <p>$650</p>
+                </article>
             </section>
         </section>
-        <section id="form">
-            
+        <section class="contact-form">
+            <h3>Contáctanos</h3>
+            <form action="#" name="contact-form">
+                <label for="name-surname"></label>
+                <input name="name-surname" type="text" required placeholder="Nombre y Apellido">
+                <label for="email"></label>
+                <input name="email" type="text" required placeholder="Ingresá tu correo electronico">
+                <label for="phone"></label>
+                <input name="phone" type="text" required placeholder="Teléfono">
+                <div class="form-button">
+                    <input type="reset" value="Resetear">
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+        <section class="subscribe-form">
+            <div>
+                <img src="img/email.svg" alt="email icon">
+                <h3>Suscríbete para más novedades</h3>
+            </div>
+            <form action="#" name="subscribe-form">
+                <label for="email"></label>
+                <input name="email" type="text" required placeholder="Ingresá tu correo electrónico">
+                <input type="submit" value="Suscribirme">
+            </form>
         </section>
     </main>
     <footer>

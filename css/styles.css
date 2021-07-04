@@ -33,7 +33,7 @@ header li {
     padding: 0 0 0 2rem;
 }
 
-header #sub-header{
+header .sub-header{
     align-items: center;
     background-color: #222222;
     color: #F3F3F3;
@@ -65,6 +65,10 @@ header nav span {
 
 header nav a {
     color: #F3F3F3;
+}
+
+nav .hamburger {
+    display: none;
 }
 
 /* FOOTER */
@@ -133,6 +137,7 @@ footer .logo span {
 
 /* CONTENT */
 
+/* MAIN BANNER */
 main h2 {
     font-size: 30px;
     line-height: 35px;
@@ -143,7 +148,7 @@ main p {
     line-height: 19px;
 }
 
-main #banner {
+main .banner {
     background-image: url('../img/comida_perro_big.png');
     background-size: cover;
     height: 575px;
@@ -151,23 +156,67 @@ main #banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    position: relative;
 }
 
-main #banner h2 {
+main .banner-content {
+    position: relative;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .banner h2 {
     background-color: #F3F3F3;
     margin: 1rem 7rem;
     padding: 1rem;
     border-radius: 5px;
 }
 
-main #banner p {
+main .banner p {
     margin: 1.5rem 0 2rem 0;
 }
 
-main #banner a {
+main .banner a {
     background-color: #F0A83E;
     color: #F3F3F3;
     padding: 1rem;
     border-radius: 5px;
 }
+
+/* PRODUCTOS DESTACADOS */
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paw {
+    padding: 1.5rem;
+    width: 10vw;
+}
+
+.destacados h2 {
+    color: #3C2313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.destacados ul {
+    padding: 1.5rem;
+    display: flex;
+}
+
+.destacados li,
+.destacados a:visited {
+    list-style-type: none;
+    color: #666666;
+    padding: 0 1rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: 376px) {
+    
+}
+
