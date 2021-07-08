@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <section class='sub-header'>
+        <section class='sub-header hidden-mobile'>
             <p>Grandes ofertas en comederos</p>
             <ul>
                 <li>Español   <i class="fas fa-angle-down"></i></li>
@@ -140,45 +140,45 @@
             <section class="cards">
                 <article>
                     <img src="img/churrasquito.png" alt="">
-                    <p>Juguete Churrasquito</p>
-                    <p>$150</p>
+                    <p class="product-name">Juguete Churrasquito</p>
+                    <p class="product-price">$150</p>
                 </article>
                 <article>
                     <img src="img/comida-para-perro.png" alt="">
-                    <p>Comedero para perro</p>
-                    <p>$250</p>
+                    <p class="product-name">Comedero para perro</p>
+                    <p class="product-price">$250</p>
                 </article>
                 <article>
                     <img src="img/huesito.png" alt="">
-                    <p>Juguete Huesito</p>
-                    <p>$650</p>
+                    <p class="product-name">Juguete Huesito</p>
+                    <p class="product-price">$650</p>
                 </article>
             </section>
         </section>
         <section class="contact-form">
             <h3>Contáctanos</h3>
-            <form action="#" name="contact-form">
+            <form action="#" name="contact-form" class="contact-form">
                 <label for="name-surname"></label>
-                <input name="name-surname" type="text" required placeholder="Nombre y Apellido">
+                <input name="name-surname" type="text" required placeholder="Nombre y Apellido" class="field contact">
                 <label for="email"></label>
-                <input name="email" type="text" required placeholder="Ingresá tu correo electronico">
+                <input name="email" type="text" required placeholder="Ingresá tu correo electronico" class="field contact">
                 <label for="phone"></label>
-                <input name="phone" type="text" required placeholder="Teléfono">
+                <input name="phone" type="text" required placeholder="Teléfono" class="field contact">
                 <div class="form-button">
-                    <input type="reset" value="Resetear">
-                    <input type="submit">
+                    <input type="reset" value="Resetear" class="button reset">
+                    <input type="submit" class="button submit">
                 </div>
             </form>
         </section>
         <section class="subscribe-form">
-            <div>
+            <div class="subscribe-form-header">
                 <img src="img/email.svg" alt="email icon">
                 <h3>Suscríbete para más novedades</h3>
             </div>
             <form action="#" name="subscribe-form">
                 <label for="email"></label>
-                <input name="email" type="text" required placeholder="Ingresá tu correo electrónico">
-                <input type="submit" value="Suscribirme">
+                <input name="email" type="text" required placeholder="Ingresá tu correo electrónico" class="field-subscribe">
+                <input type="submit" value="Suscribirme" class="button-subscribe">
             </form>
         </section>
     </main>
