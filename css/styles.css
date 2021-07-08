@@ -47,9 +47,8 @@ header .sub-header{
     background-color: #222222;
     color: #F3F3F3;
     display: flex;
-    height: 20px;
     justify-content: space-between;
-    padding: 1rem 5% 1rem 5%;
+    padding: 1rem 4rem;
 }
 
 header nav {
@@ -59,7 +58,7 @@ header nav {
     display: flex;
     height: 62px;
     justify-content: space-between;
-    padding: 1rem 5% 1rem 5%;
+    padding: 1rem 4rem;
 }
 
 header nav .logo {
@@ -91,7 +90,7 @@ footer .main-footer {
     background-color: #3C2313;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5% 1rem 5%;
+    padding: 1rem;
 }
 
 footer .main-footer .contactos-item {
@@ -160,11 +159,11 @@ main p {
 main .banner {
     background-image: url('../img/comida_perro_big.png');
     background-size: cover;
-    height: 575px;
-    padding: 0 0 0 60%;
+    height: 576px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     position: relative;
 }
 
@@ -174,11 +173,12 @@ main .banner-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #3C2313;
 }
 
 main .banner h2 {
     background-color: #F3F3F3;
-    margin: 1rem 7rem;
+    margin: 1rem;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -246,6 +246,7 @@ main .banner a {
 .product-price {
     color: #F0A83E;
     font-size: 15px;
+    padding: 1rem;
 }
 
 /* CONTACT FORM */
@@ -330,7 +331,7 @@ main .banner a {
 
 .field-subscribe {
     color: #A0A0A0;
-    width: 270px;
+    width: 150px;
     height: 40px;
     border-radius: 15px;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -351,9 +352,81 @@ main .banner a {
 }
 
 /* MOBILE */
-@media screen and (max-width: 1024px) {
-    .hidden-mobile {
+@media (max-width: 480px) {
+    /* ESCONDER SUBHEADER NEGRO */
+    header .hidden-mobile {
         display: none;
+    }
+
+    /* ESCONDER LINKS DE NAVEGACION */
+    .nav-links {
+        display: none;
+    }
+
+    /* HACER APARECER EL HAMBURGER ICON */
+    nav .hamburger {
+        display: block;
+    }
+
+    /* AJUSTES HEADER */
+    header nav {
+        height: 25px;
+        padding: 2rem;
+    }
+
+    nav p {
+        font-size: 1rem;
+    }
+
+    /* AJUSTES BANNER */
+    main .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    /* AJUSTES PRODUCTOS DESTACADOS */
+    .destacados h2 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards img {
+        width: 200px;
+    }
+
+    .cards article {
+        margin: 1rem 4rem;
+    }
+
+    /* AJUSTES CONTACT FORM */
+    .field {
+        width: 13rem;
+        font-size: 16px;
+    }
+
+    /* AJUSTES SUBSCRIBE FORM */
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form-header {
+        padding: 1rem;
+    }
+
+    .subscribe-form-header  h3{
+        font-size: 1rem;
+    }
+
+    /* AJUSTES FOOTER */
+    footer .main-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logo {
+        order: -1;
     }
 }
 
